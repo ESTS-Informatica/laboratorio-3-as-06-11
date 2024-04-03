@@ -17,7 +17,9 @@ public class AirTransportation extends Transport{
     public AirTransportation()
     {
         // inicializa variáveis de instância
-       
+       this.name = name;
+       this.numberOfContainers = numberOfContainers;
+       setFees(FEES);
     }
 
     /**
@@ -26,5 +28,18 @@ public class AirTransportation extends Transport{
      * @param  y   um exemplo de um parâmetro de método
      * @return     a soma de x e y 
      */
+    public String getName(){
+        return name;
+    }
     
+    public void setName(){
+        this.name = name;
+    }
+    public int getnumberOfContainers(){
+        return numberOfContainers;
+    }
+    
+    public void setnumberOfContainers(){
+        this.numberOfContainers = numberOfContainers;
+    }
 }
